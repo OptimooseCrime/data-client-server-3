@@ -1,6 +1,6 @@
 const express = require('express')
 const server = express()
-const port = 8081
+const port = process.env.PORT || 8080
 const cors = require('cors')
 const data = require('./data/students.json')
 const res = 'response'
